@@ -1,0 +1,22 @@
+{
+  "name": "accessiblebreakout",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Accessible Breakout Experiment",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build --base /accessiblebreakout/",
+    "prebuild": "tsc",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@babylonjs/core": "^7.0.0",
+    "@babylonjs/inspector": "^7.0.0",
+    "mespeak": "^2.0.2"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.3",
+    "vite": "^5.2.7"
+  }
+}

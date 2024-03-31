@@ -1,37 +1,70 @@
-﻿<!DOCTYPE html>
+﻿<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link href="css/indexvi.css" rel="stylesheet">
-    <title>Accessible Breakout Experiment</title>
-</head>
-<body>
-    <div class="grid">
-        <header>
-            <h1>
-                Breakout4All
-            </h1>
-            <ul>
-                <li>Visually Impaired: <input type="checkbox" checked="checked" name="visualImpaired" id="chkVisualImpaired"></li>
-                <li>Blind: <input type="checkbox" checked="checked" name="audioAccessibility" id="chkAudioAccessibility"></li>
-                <li><input id="newGame" type="button" value="Start game" /></li>
-            </ul>
-        </header>
-        <div id="gameZone">
-            <canvas id="backgroundCanvas" class="webGLCanvas"></canvas>
-            <svg id="svgRoot" class="svgContainer" viewBox="0 0 1575 680" preserveAspectRatio="xMidYMax meet">
-                <circle cx="100" cy="100" r="10" id="ball" class="gameBall"></circle>
-                <rect id="pad" class="gamePad" height="15px" width="150px" x="200" y="400" rx="10" ry="20"></rect>
-            </svg>
-            <div id="message" class="gameMessage">Victory!</div>
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" href="/favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Accessible Breakout Experiment</title>
+        <link href="/css/indexvi.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="grid">
+            <header>
+                <h1>Breakout4All</h1>
+                <ul>
+                    <li>
+                        Visually Impaired:
+                        <input
+                            type="checkbox"
+                            checked="checked"
+                            name="visualImpaired"
+                            id="chkVisualImpaired"
+                        />
+                    </li>
+                    <li>
+                        Blind:
+                        <input
+                            type="checkbox"
+                            checked="checked"
+                            name="audioAccessibility"
+                            id="chkAudioAccessibility"
+                        />
+                    </li>
+                    <li>
+                        <input id="newGame" type="button" value="Start game" />
+                    </li>
+                </ul>
+            </header>
+            <div id="gameZone">
+                <canvas id="backgroundCanvas" class="webGLCanvas"></canvas>
+                <svg
+                    id="svgRoot"
+                    class="svgContainer"
+                    viewBox="0 0 1575 680"
+                    preserveAspectRatio="xMidYMax meet"
+                >
+                    <circle
+                        cx="100"
+                        cy="100"
+                        r="10"
+                        id="ball"
+                        class="gameBall"
+                    ></circle>
+                    <rect
+                        id="pad"
+                        class="gamePad"
+                        height="15px"
+                        width="150px"
+                        x="200"
+                        y="400"
+                        rx="10"
+                        ry="20"
+                    ></rect>
+                </svg>
+                <div id="message" class="gameMessage">Victory!</div>
+            </div>
         </div>
-    </div>
-    <script src="js/mespeak.js"></script>
-    <script src="http://cdn.babylonjs.com/2-0/babylon.js"></script>
-    <script type="text/javascript" src="ts/BrikBrokGame.js"></script>
-    <script>
-        var newGame = new BrikBrok.Game();
-        newGame.initGame();
-    </script>
-</body>
+        <script type="module" src="/src/main.ts"></script>
+    </body>
 </html>

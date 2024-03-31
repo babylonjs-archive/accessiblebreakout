@@ -1,5 +1,18 @@
-# accessiblebreakout
-Accessible Breakout Experiment
+# Accessible Breakout
+
+![Deploy to GitHub Pages](https://github.com/babylonjs-archive/accessiblebreakout/actions/workflows/deploy.yml/badge.svg)
+
+This is a fork of the original here: <https://github.com/davrous/accessiblebreakout>
+
+View the live site here: <https://babylonjs-archive.github.io/accessiblebreakout/>
+
+To run locally, clone the repository and run this:
+
+    cd accessiblebreakout
+    npm install
+    npm run dev
+
+-----
 
 As the co-author of Babylon.js, a WebGL gaming engine, I was always felt a little uneasy listening to folks discuss accessibility best practices at web conferences. The content created with Babylon.js is indeed completely inaccessible to blind people. Making the web accessible to everyone is very important. I’m more convinced than ever about that as I’m personally touched via my own son. And so I wanted to contribute to the accessibility of the web in some way.
 
